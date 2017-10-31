@@ -1,0 +1,14 @@
+RewriteEngine on
+RewriteCond $1 !^(index\.php|resources|robots\.txt)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L,QSA]
+
+#redirect http://www.eyesoccer.id to https://www.eyesoccer.id
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^www.eyesoccer.id [NC]
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+#redirect http(s)://eyesoccer.id to https://www.eyesoccer.id
+RewriteCond %{HTTP_HOST} !^www.eyesoccer.id [NC]
+RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
