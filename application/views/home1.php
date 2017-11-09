@@ -28,12 +28,12 @@
 		@font-face
 		{
         	font-family: "Montserrat";
-        	src: url('../bs/assets/montserrat/Montserrat-Regular.otf');
+        	src: url('../assets/new_assets/montserrat/Montserrat-Regular.otf');
 	    }
 		@font-face
 		{
         	font-family: "Montserratbold";
-        	src: url('../bs/assets/montserrat/Montserrat-Bold.otf');
+        	src: url('../assets/new_assets/montserrat/Montserrat-Bold.otf');
 	    }
 		body
 		{
@@ -198,7 +198,7 @@
 			<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" style="padding: 0px;">
 				<div class="owl-nav">
 					<div class="jadwalPrev">
-						<img src="<?php echo base_url(); ?>bs/assets/btn-chevron-left.png" class="arrow-box-jadwal">
+						<img src="<?php echo base_url(); ?>assets/new_assets/btn-chevron-left.png" class="arrow-box-jadwal">
 					</div>
 		        </div>
 			</div>
@@ -214,7 +214,7 @@
 							<div class="item-jadwal">
 								<div class="lingkup-box col-lg-2">
 									<div class="box-jadwal">
-										<img src="<?php echo base_url(); ?>bs/assets/box-jadwal-pertandingan.png" alt="">
+										<img src="<?php echo base_url(); ?>assets/new_assets/box-jadwal-pertandingan.png" alt="">
 										<div class="isi-box-jadwal">
 											<div class="time-box-jadwal">
 												<div style="float: left;">
@@ -260,7 +260,7 @@
 			<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" style="padding: 0px;">
 				<div class="owl-nav">
 					<div class="jadwalNext">
-						<img src="<?php echo base_url(); ?>bs/assets/btn-chevron-right.png" class="arrow-box-jadwal" style="float: right;">
+						<img src="<?php echo base_url(); ?>assets/new_assets/btn-chevron-right.png" class="arrow-box-jadwal" style="float: right;">
 					</div>
 		        </div>
 			</div>
@@ -304,16 +304,16 @@
 		<!-- konten eyeProfile -->
 		<div class="row">
 			<div class="line-eyeprofile">
-				<img src="<?php echo base_url(); ?>bs/assets/ic_eyeprofile.png">
+				<img src="<?php echo base_url(); ?>assets/new_assets/ic_eyeprofile.png">
 				<span style="font-family: Montserratbold; color:#F08A38;font-size: 20px;">
 					eyeProfile 
 				</span>
-				<img src="<?php echo base_url(); ?>bs/assets/line-eyeprofile.png">
+				<img src="<?php echo base_url(); ?>assets/new_assets/line-eyeprofile.png">
 			</div>
 			<div style="text-align: right;color:#F08A38;">
 				<a href="<?php echo base_url(); ?>eyeprofile/klub">
 					Klub Lainnya
-					<img src="<?php echo base_url(); ?>bs/assets/chevron-right-orange.png">
+					<img src="<?php echo base_url(); ?>assets/new_assets/chevron-right-orange.png">
 				</a>
 			</div>
 			<div class="owl-carousel owl-theme" id="club-slider" style="cursor: move;">
@@ -322,7 +322,7 @@
 			{
 ?>
 				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-2" style="padding: 0px;">
-					<img src="<?php echo base_url(); ?>bs/assets/box-club white.png" style="width: auto;">
+					<img src="<?php echo base_url(); ?>assets/new_assets/box-club white.png" style="width: auto;">
 					<div>
 						<div style="position: absolute; top: 15%; left: 130%; width: 190px; ">
 							<div style="font-family: Montserratbold;">
@@ -360,8 +360,8 @@
 		<div class="row">
 			<span style="color:#F08A38;">PEMAIN PROFESIONAL</span>
 			<div style="float: right;">
-				<img src="<?php echo base_url(); ?>bs/assets/chevron-left-rounded-deactive.png" id="haha">
-				<img src="<?php echo base_url(); ?>bs/assets/chevron-right-rounded-active.png">
+				<img src="<?php echo base_url(); ?>assets/new_assets/chevron-left-rounded-deactive.png" id="haha">
+				<img src="<?php echo base_url(); ?>assets/new_assets/chevron-right-rounded-active.png">
 			</div>
 			<br>
 		</div>
@@ -389,10 +389,10 @@
         			);
 ?>
 			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-				<img src="<?php echo base_url(); ?>bs/assets/box-pemain banyak dilihat.png">
+				<img src="<?php echo base_url(); ?>assets/new_assets/box-pemain banyak dilihat.png">
 				<div style="position: absolute; top: 0%;">
 					<img src="<?php echo base_url(); ?>systems/player_storage/<?= $player['foto']; ?>" style="width:114px; height: 114px;">
-					<!-- <img src="<?php echo base_url(); ?>bs/assets/box-foto pemain banyak dilihat.png" style="position: absolute; top: 0%;"> -->
+					<!-- <img src="<?php echo base_url(); ?>assets/new_assets/box-foto pemain banyak dilihat.png" style="position: absolute; top: 0%;"> -->
 					<div class="box-player-name" style="position: absolute; top: 0%; left: 120%; width: 212%;">
 						<h4 style="color:#F08A38;"><?= $player['nama']; ?></h4>
 					
@@ -429,9 +429,9 @@
 		<!-- konten eyeTube -->
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<img src="<?php echo base_url(); ?>bs/assets/ic_eyetube.png">
+				<img src="<?php echo base_url(); ?>assets/new_assets/ic_eyetube.png">
 				<span style="font-family: Montserratbold; color:#347FC0;font-size: 20px;">eyeTube</span>
-				<img src="<?php echo base_url(); ?>bs/assets/line-eyetube.png" style="width: 1020px;">
+				<img src="<?php echo base_url(); ?>assets/new_assets/line-eyetube.png" style="width: 1020px;">
 			</div>
 			
 			<br>
@@ -441,7 +441,7 @@
 			{
 ?>
 				<div class="box-eyetube-1">
-					<!-- <img src="<?php echo base_url(); ?>bs/assets/main-video.png"> -->
+					<!-- <img src="<?php echo base_url(); ?>assets/new_assets/main-video.png"> -->
 					<video id="eyetube-satu" width="678" height="384" poster="<?=base_url()?>systems/eyetube_storage/<?= $videonya['thumb']; ?>" controls controlsList="nodownload">
 						<source src="<?=base_url()?>systems/eyetube_storage/<?= $videonya['video']; ?>" type="video/mp4"/>
 					</video>
@@ -524,7 +524,7 @@
 		      	<div class="row">
 		      		<div style="color: #347FC0; float: right;">
 		      			<a href="<?php echo base_url(); ?>eyetube">
-		      				Video Lainnya <img src="<?php echo base_url(); ?>bs/assets/chevron-right-blue.png">
+		      				Video Lainnya <img src="<?php echo base_url(); ?>assets/new_assets/chevron-right-blue.png">
 		      			</a>
 		      		</div>
 		      		<br>
@@ -556,7 +556,7 @@
 		      	<div class="row">
 		      		<div style="color: #347FC0; float: right;">
 		      			<a href="<?php echo base_url(); ?>eyetube">
-		      				Video Lainnya <img src="<?php echo base_url(); ?>bs/assets/chevron-right-blue.png">
+		      				Video Lainnya <img src="<?php echo base_url(); ?>assets/new_assets/chevron-right-blue.png">
 		      			</a>
 		      		</div>
 		      		<br>
@@ -588,7 +588,7 @@
 		      	<div class="row">
 		      		<div style="color: #347FC0; float: right;">
 		      			<a href="<?php echo base_url(); ?>eyetube">
-		      				Video Lainnya <img src="<?php echo base_url(); ?>bs/assets/chevron-right-blue.png">
+		      				Video Lainnya <img src="<?php echo base_url(); ?>assets/new_assets/chevron-right-blue.png">
 		      			</a>
 		      		</div>
 		      		<br>
@@ -622,9 +622,9 @@
 		  <!-- konten eyeNews dan eyeMe -->
 		  <div class="row">
 		  	<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12" style="padding: unset;">
-	  			<img src="<?php echo base_url(); ?>bs/assets/ic_eyenews.png">
+	  			<img src="<?php echo base_url(); ?>assets/new_assets/ic_eyenews.png">
 	  			<span style="font-family: Montserratbold; color:#CD4F41;font-size: 20px;">eyeNews</span>
-	  			<img src="<?php echo base_url(); ?>bs/assets/line-eyenews.png">
+	  			<img src="<?php echo base_url(); ?>assets/new_assets/line-eyenews.png">
 	  			<br>
 	  			<br>
 
@@ -661,7 +661,7 @@
 ?>
 	  					<div>
 	  						<a href="<?php echo base_url(); ?>eyenews/detail/<?= $similar['eyenews_id'];?>">
-	  							<img src="<?php echo base_url(); ?>bs/assets/chevron-right-red.png"> <?= $similar['title']; ?>
+	  							<img src="<?php echo base_url(); ?>assets/new_assets/chevron-right-red.png"> <?= $similar['title']; ?>
 	  						</a>
 	  					</div>
 <?php			
@@ -672,9 +672,9 @@
 	  			</div>
 		  	</div>
 		  	<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12" style="padding: unset;">
-		  		<img src="<?php echo base_url(); ?>bs/assets/ic-eyeme.png">
+		  		<img src="<?php echo base_url(); ?>assets/new_assets/ic-eyeme.png">
 		  		<span style="font-family: Montserratbold; color:#59B9E9;font-size: 20px;">eyeMe</span>
-		  		<img src="<?php echo base_url(); ?>bs/assets/line-eyeme.png" style="width: 378px;">
+		  		<img src="<?php echo base_url(); ?>assets/new_assets/line-eyeme.png" style="width: 378px;">
 		  	</div>
 		  </div>
 
