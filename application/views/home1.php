@@ -692,7 +692,7 @@
 	
 
 	<script src="<?=base_url()?>bs/jquery/jquery-3.2.1.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="<?php echo base_url(); ?>bs/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url(); ?>bs/js/owl.carousel.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function()
