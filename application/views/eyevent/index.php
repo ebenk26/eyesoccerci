@@ -64,7 +64,7 @@ color: #a9a9a9;
   <li class="active" style="border-radius:0px;"><a data-toggle="tab" href="#mn700" id="a99">JADWAL</a></li>
   <li><a data-toggle="tab" href="#mn701" id="a99">LIVE</a></li>
   <li><a data-toggle="tab" href="#mn702" id="a99">HASIL</a></li>
-  <li><a data-toggle="tab" href="#mn703" id="a99">KLASMEN</a></li>   
+  <li><a data-toggle="tab" href="#mn703" id="a99">KLASEMEN</a></li>   
 </ul>
 <div class="tab-content"><br>
   <div id="mn700" class="tab-pane fade in active">
@@ -882,7 +882,7 @@ foreach($jadwal->result_array() as $data){
   <div id="myCarousel5" class="carousel slide" data-ride="carousel" data-interval="false">
   <div class="carousel-inner">
     <div class="item active">
-    <div style="background:#273746;padding:10px;color:#ffffff;" class="text-center" id="a5">KLASMEN LIGA 1 INDONESIA</div><br>
+    <div style="background:#273746;padding:10px;color:#ffffff;" class="text-center" id="a5">KLASEMEN LIGA 1 INDONESIA</div><br>
 
 			<?php
 		$clasment=$this->db->query("SELECT * FROM tbl_clasment where title like '%Liga indonesia%' order by clasment_id");	
@@ -900,7 +900,7 @@ foreach($jadwal->result_array() as $data){
 
     </div>
     <div class="item">
-    <div style="background:#273746;padding:10px;color:#ffffff;" class="text-center" id="a5">KLASMEN LIGA INGGRIS</div><br>
+    <div style="background:#273746;padding:10px;color:#ffffff;" class="text-center" id="a5">KLASEMEN LIGA INGGRIS</div><br>
 
 					<?php
 		$clasment=$this->db->query("SELECT * FROM tbl_clasment where title like '%Liga inggris%' order by clasment_id");	
@@ -918,7 +918,7 @@ foreach($jadwal->result_array() as $data){
 
     </div>
     <div class="item">
-    <div style="background:#273746;padding:10px;color:#ffffff;" class="text-center" id="a5">KLASMEN LIGA SPANYOL</div><br>
+    <div style="background:#273746;padding:10px;color:#ffffff;" class="text-center" id="a5">KLASEMEN LIGA SPANYOL</div><br>
 
 		<?php
 		$clasment=$this->db->query("SELECT * FROM tbl_clasment where title like '%Liga spanyol%' order by clasment_id");	
@@ -936,7 +936,7 @@ foreach($jadwal->result_array() as $data){
 
     </div>    
     <div class="item">
-    <div style="background:#273746;padding:10px;color:#ffffff;" class="text-center" id="a5">KLASMEN LIGA JERMAN</div><br>
+    <div style="background:#273746;padding:10px;color:#ffffff;" class="text-center" id="a5">KLASEMEN LIGA JERMAN</div><br>
 
 		<?php
 		$clasment=$this->db->query("SELECT * FROM tbl_clasment where title like '%Liga jerman%' order by clasment_id");	
@@ -954,7 +954,7 @@ foreach($jadwal->result_array() as $data){
 
     </div>
     <div class="item">
-    <div style="background:#273746;padding:10px;color:#ffffff;" class="text-center" id="a5">KLASMEN LIGA ITALY</div><br>
+    <div style="background:#273746;padding:10px;color:#ffffff;" class="text-center" id="a5">KLASEMEN LIGA ITALY</div><br>
 	
 		<?php
 		$clasment=$this->db->query("SELECT * FROM tbl_clasment where title like '%Liga italia%' order by clasment_id");	
@@ -972,7 +972,7 @@ foreach($jadwal->result_array() as $data){
 	
     </div>
 <div class="item">
-    <div style="background:#273746;padding:10px;color:#ffffff;" class="text-center" id="a5">KLASMEN LIGA PERANCIS</div><br>
+    <div style="background:#273746;padding:10px;color:#ffffff;" class="text-center" id="a5">KLASEMEN LIGA PERANCIS</div><br>
 
 <?php
 		$clasment=$this->db->query("SELECT * FROM tbl_clasment where title like '%Liga perancis%' order by clasment_id");	

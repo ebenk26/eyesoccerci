@@ -35,13 +35,7 @@ if($_SESSION["device_detail"]=="Dekstop"){
 <div id="myCarousel1" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
       <div class="item active">
-        <img src="<?=base_url()?>img/slide_1.jpg" alt="Los Angeles" style="width:100%;height:280px;">
-      </div>
-      <div class="item">
-        <img src="<?=base_url()?>img/slide_2.jpg" alt="Chicago" style="width:100%;height:280px;">
-      </div>    
-      <div class="item">
-        <img src="<?=base_url()?>img/slide_3.jpg" alt="New york" style="width:100%;height:280px;">
+        <img src="<?=base_url()?>img/banner-top.jpg" alt="Banner Top Eyesoccer" style="width:100%;height:280px;">
       </div>
     </div>
 </div><br>
@@ -54,7 +48,7 @@ if($_SESSION["device_detail"]=="Dekstop"){
 $cmd1=$this->db->query("select * from tbl_eyenews where publish_on<='".date("Y-m-d H:i:s")."' order by eyenews_id desc LIMIT 7");
 $cmd2=$cmd1->result_array();
 ?>
-<a href="<?=base_url()?>eyenews" id="a100"><h4 id="t100" style="padding-top:20px;"><img src="<?=base_url()?>img/icon_eyenews.png" class="img img-responsive" style="width:30px;height:30px;display:inline;"> EyeNews</h4></a>
+<a href="<?=base_url()?>eyenews" id="a100"><h4 id="t100" style="padding-top:20px;"><!--<img src="<?=base_url()?>img/icon_eyenews.png" class="img img-responsive" style="width:30px;height:30px;display:inline;">--><i class="fa fa-newspaper-o" style="color:#d83636"></i> EyeNews</h4></a>
 <div id="myCarousel2" class="carousel slide" data-ride="carousel" data-interval="false">
   <div class="carousel-inner">
     <?php
@@ -64,7 +58,7 @@ $cmd2=$cmd1->result_array();
       <div style="cursor:pointer" class="item active" onclick='window.location.assign("<?=base_url()?>eyenews/detail/<?=$data["eyenews_id"]?>")'>
       <div class="set100">
   
-        <img src="<?=base_url().'systems/eyenews_storage/'.$data['thumb1'];?>" alt="Norway" style="width:100%;">
+        <img src="<?=base_url().'systems/eyenews_storage/'.$data['pic'];?>" alt="Norway" style="width:100%;">
         <div id="set-top-left-100">Headline</div>     
         <div id="setcenter100"><?=$data["title"]?></div>
       </div>        
@@ -84,7 +78,7 @@ $cmd2=$cmd1->result_array();
  <a href="<?=base_url()?>eyenews/detail/<?=$data["eyenews_id"]?>">
 <div class="set100 row" style="cursor:pointer" onclick='window.location.assign("<?=base_url()?>eyenews/detail/<?=$data["eyenews_id"]?>")'>
 
-  <img src="<?=base_url().'systems/eyenews_storage/'.$data['thumb1'];?>" alt="Norway" style="width:100%;max-height:218px;">    
+  <img src="<?=base_url().'systems/eyenews_storage/'.$data['pic'];?>" alt="Norway" style="width:100%;max-height:218px;">    
   <div id="setcenter101" class="hidden-sm"><?=$data["title"]?></div>
 </div> 
 </a>
@@ -97,7 +91,7 @@ $cmd2=$cmd1->result_array();
      <a href="<?=base_url()?>eyenews/detail/<?=$data["eyenews_id"]?>">
 <div class="set100" style="cursor:pointer" onclick='window.location.assign("<?=base_url()?>eyenews/detail/<?=$data["eyenews_id"]?>")'>
 
-  <img src="<?=base_url().'systems/eyenews_storage/'.$data['thumb1'];?>" alt="Norway" style="width:100%;">     
+  <img src="<?=base_url().'systems/eyenews_storage/'.$data['pic'];?>" alt="Norway" style="width:100%;">     
   <div id="setcenter102"><?=$data["title"]?></div>
 </div>  
 </a>
@@ -194,7 +188,7 @@ print "<div class='form-group text-right' style='padding-top:15px;'><a href='".b
 </div>
 </div>
 
-<a href="<?=base_url()?>eyetube" id="a100"><h4 id="t100" style="padding-top:20px;"><img src="<?=base_url()?>img/icon_eyetube.png" class="img img-responsive" style="width:30px;height:30px;display:inline;"> EyeTube</h4></a>
+<a href="<?=base_url()?>eyetube" id="a100"><h4 id="t100" style="padding-top:20px;"><i class="fa fa-play-circle-o" style="color:#d83636"></i> EyeTube</h4></a>
 <div class="col-lg-6 col-md-6" style="padding-left:0px;">
 <?php
 $cmd1=$this->db->query("select * from tbl_eyetube where publish_on<='".date("Y-m-d H:i:s")."'  order by eyetube_id desc LIMIT 1");
@@ -290,7 +284,7 @@ foreach($cmd1->result_array() as $data){
 
 <div class="col-lg-12 col-md-12" style="padding-left:0px;"></div>
 <div class="col-lg-6 col-md-6" style="padding-left:0px;">
-<a href="<?=base_url()?>eyevent" id="a100"><h4 id="t100"><img src="<?=base_url()?>img/icon_eyevent.png" class="img img-responsive" style="width:25px;height:30px;display:inline;"> EyeVent</h4></a>
+<a href="<?=base_url()?>eyevent" id="a100"><h4 id="t100"><i class="fa fa-calendar" style="color:#d83636"></i> EyeVent</h4></a>
   <ul class="nav nav-tabs nav-justified">
   <li class="active"><a data-toggle="tab" href="#mn104" class="mytab">Jadwal Liga</a></li>
   <li><a data-toggle="tab" href="#mn105" class="mytab">Jadwal Live</a></li>
@@ -365,7 +359,7 @@ print "<div class='form-group text-right' style='padding-top:15px;'><a href='".b
   </div>
 </div>
 <div class="col-lg-6 col-md-6">
-<a href="<?=base_url()?>eyevent/eventlainnya" id="a100"><h4 id="t100" style="padding-top:14px; margin:0px;"><img src="<?=base_url()?>img/icon_eyevent.png" class="img img-responsive" style="width:25px;height:30px;display:inline;"> EVENT LAINNYA</h4></a>
+<a href="<?=base_url()?>eyevent/eventlainnya" id="a100"><h4 id="t100" style="padding-top:14px; margin:0px;"><i class="fa fa-calendar-o" style="color:#d83636"></i> Event Lainnya</h4></a>
 <hr style="border-bottom:solid #d83636 2px;margin-top:5px;"></hr>
 <?php
 $cmd1=$this->db->query("select * from tbl_event where publish_on<='".date("Y-m-d H:i:s")."' order by publish_on desc  limit 5");

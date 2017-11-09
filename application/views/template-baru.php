@@ -57,6 +57,14 @@ $array[] =  $row_ads;
 <!DOCTYPE html>
 <html>
 <head>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-4600267368341699",
+    enable_page_level_ads: true
+  });
+</script>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <?php
 if(!isset($meta["share"]))
@@ -78,6 +86,7 @@ if(!isset($meta["share"]))
 <meta name="geo.placename"content="Indonesia" />
 <link rel="publisher" href="https://plus.google.com/u/1/105520415591265268244" />
 <link rel="canonical" href="https://www.eyesoccer.id" />
+<meta name="google-site-verification" content="EdjwDGdhwMeQEVZLYz7a3obpjM7g2yMDB899fGBG26c" />
 <!-- End of SEO Meta Tags-->
 
 <!-- Begin of Facebook Open graph data-->
@@ -113,9 +122,11 @@ else{
 <link rel="stylesheet" type="text/css" href="<?=base_url()?>bs/css/mycss.css">
 <link rel="stylesheet" type="text/css" href="<?=base_url()?>bs/css/soccer-field.css"><!--update rizki-->
 <link rel="stylesheet" type="text/css" href="<?=base_url()?>bs/css/arf-styles.css">
+<link rel="stylesheet" type="text/css" href="<?=base_url()?>bs/jquery/jquery-ui.css">
 <link rel="stylesheet" href="<?=base_url()?>assets/dist/css/bootstrap-select.css">
-<script src="<?=base_url()?>bs/jquery/jquery-3.2.1.min.js"></script>
+<script src="<?=base_url()?>bs/jquery/jquery-3.2.1.js"></script>
 <script src="<?=base_url()?>bs/js/datatables.js"></script>
+<script src="<?=base_url()?>bs/jquery/jquery-ui.js"></script>
 <style>
 .tab-pane{
   border-top:none;
@@ -654,8 +665,10 @@ else{
 
 <script src="<?=base_url()?>bs/js/dist/circleMenu.min.js"></script>
 <!-- update rizki end-->
+<link rel="stylesheet" type="text/css" href="<?=base_url()?>bs/jquery/jquery-ui.css">
 
-<script src="<?=base_url()?>bs/jquery/jquery-3.2.1.min.js"></script>
+<script src="<?=base_url()?>bs/jquery/jquery-3.2.1.js"></script>
+<script src="<?=base_url()?>bs/jquery/jquery-ui.js"></script>
 <script src="<?=base_url()?>bs/js/bootstrap.min.js"></script>
 <script src="<?=base_url()?>bs/js/jquery.bxslider.js"></script><!-- update rizki-->
 <script src="<?=base_url()?>bs/js/directorySlider.js"></script><!-- update rizki-->

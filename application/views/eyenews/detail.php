@@ -41,7 +41,17 @@
 </style>
 <div class="col-lg-8 col-md-8 parent-image"><div class="hidden-xs hidden-sm"><br></div>
 <a href="<?=base_url()?>eyenews" class="btn btn-info btn-sm">Home</a>
-<a href="<?=base_url()?>eyenews/search/<?=$row['news_type']?>" class="btn btn-warning btn-sm"><?php echo $row['news_type'];?></a>
+<a href="<?=base_url()?>eyenews/search/<?=$row['news_type']?>" class="btn btn-warning btn-sm">
+<?php 
+if($row['news_type'] =="Berita"){
+	$row['news_type']="Peristiwa";
+}else if($row['news_type']=="Usia Muda"){
+	$row['news_type']="Pembinaan";
+}else{
+	$row['news_type']=$row['news_type'];
+}
+echo $row['news_type'];
+?></a>
 <?php
 if($row['sub_category_name']=="" || $row['sub_category_name']=="0"){
 print "";
@@ -303,7 +313,7 @@ print'
     <div class="media drop-shadow">
     
       <div class="media-left ">
-        <a href="'.base_url().'eyetube/detail/'.$eyetube_id.'"><img src="'.base_url().'systems/eyetube_storage/'.$row4['pic'].'" class="media-object " id="img4" ></a>
+        <a href="'.base_url().'eyetube/detail/'.$eyetube_id.'"><img src="'.base_url().'systems/eyetube_storage/'.$row4['thumb1'].'" class="media-object " id="img4" ></a>
       </div>
       <div class="media-body ">
         <a href="'.base_url().'eyetube/detail/'.$eyetube_id.'" id="a4" class=""><p class="media-heading">'.$row4['title'].'</p>
